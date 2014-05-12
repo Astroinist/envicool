@@ -1,5 +1,8 @@
 package com.envicool.room.model.entity;
 
+import javax.persistence.Entity;
+
+@Entity(name="tbl_post")
 public class PostEntity extends BaseEntity {
     
     private static final long serialVersionUID = -5567307628796319874L;

@@ -1,5 +1,10 @@
 package com.envicool.room.model.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tbl_user")
 public class UserEntity extends BaseEntity {
 
     private static final long serialVersionUID = -1892443123862589773L;
