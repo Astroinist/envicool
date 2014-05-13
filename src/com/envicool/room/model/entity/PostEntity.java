@@ -1,5 +1,7 @@
 package com.envicool.room.model.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
@@ -20,6 +22,19 @@ public class PostEntity extends BaseEntity {
     //页面编码如下：blog（博文）,contact（联系我们）,about(关于我们)，infor(行业资讯)，product（产品信息）
     @Column(name="post_code")
     protected String code = "blog";
+    
+    @Column(name="post_at")
+    protected Date at = new Date();
+    
+    public PostEntity() {
+        super();
+    }
+
+    public PostEntity(String title, String content) {
+        super();
+        this.title = title;
+        this.content = content;
+    }
 
     public String getTitle() {
         return title;
@@ -44,6 +59,13 @@ public class PostEntity extends BaseEntity {
     public void setCode(String code) {
         this.code = code;
     }
-    
+
+    public Date getAt() {
+        return at;
+    }
+
+    public void setAt(Date at) {
+        this.at = at;
+    }
     
 }

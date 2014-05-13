@@ -9,7 +9,12 @@ public class HomeController {
 
     @RequestMapping("/index")
     public ModelAndView index() {
-        return new ModelAndView("home");
+        return new ModelAndView("/home");
+    }
+    
+    @RequestMapping("/admin/index")
+    public ModelAndView admin() {
+        return new ModelAndView("/admin/home");
     }
     
 }
