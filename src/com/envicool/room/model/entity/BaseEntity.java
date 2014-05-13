@@ -9,6 +9,8 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.MappedSuperclass;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @MappedSuperclass
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class BaseEntity implements Serializable {
@@ -16,7 +18,8 @@ public class BaseEntity implements Serializable {
     private static final long serialVersionUID = 7743262266808669171L;
     
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.TABLE)
+    @GenericGenerator(name = "uuid", strategy = "uuid")
     protected long id;
     
 }

@@ -25,7 +25,7 @@
 		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
 		<init-param> 
             <param-name>singleSession</param-name> 
-            <param-value>false</param-value>            
+            <param-value>false</param-value>
         </init-param> 
         <init-param> 
         	<param-name>flushMode</param-name> 
@@ -48,6 +48,6 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>spring-servlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 </web-app>

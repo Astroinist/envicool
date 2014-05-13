@@ -10,59 +10,48 @@
    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd"> 
    
     <context:annotation-config /> 
-	<context:property-placeholder location="classpath:ds.properties" />
-	<context:component-scan base-package="com.envicool.room.model.entity" > 
-		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-	</context:component-scan>
-	
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-		<property name="driverClassName" value="${driver.class.name}" />
-		<property name="url" value="${url}" />
-		<property name="username" value="${username}" />
-		<property name="password" value="${password}" />
-	</bean>
-	
-	<bean id="sessionFactory"
-         class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
-         <property name="dataSource" ref="dataSource" />
-         <property name="hibernateProperties">
-         	<!-- 
-         	<value>
-         		hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-         		hibernate.hbm2ddl.auto=update
-         		hibernate.show_sql=true
-         		hibernate.format_sql=true
-         	</value>
-         	 -->
-         	 <value>
-         		hibernate.dialect=org.hibernatespatial.postgis.PostgisDialect
-         		hibernate.hbm2ddl.auto=update
-         		hibernate.show_sql=true
-         		hibernate.format_sql=true
+    <context:property-placeholder location="classpath:ds.properties" />
+    <context:component-scan base-package="com.envicool" > 
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${driver.class.name}" />
+        <property name="url" value="${url}" />
+        <property name="username" value="${username}" />
+        <property name="password" value="${password}" />
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="hibernateProperties">
+            <value>
+                hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+                hibernate.hbm2ddl.auto=update
+                hibernate.show_sql=true
+                hibernate.format_sql=true
          	</value>
          </property>
-         <property name="packagesToScan" >  
+         <property name="packagesToScan" >
             <list>  
-                <value>net.prowebx.*</value>  
-            </list>  
-        </property>  
-	</bean>
-	
-	<bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
-			<property name="sessionFactory" ref="sessionFactory" />
-	</bean>
-	<bean id="transactionInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">
-  		<property name="transactionManager">
-  			<ref local="txManager"/>
-  		</property>
+                <value>com.envicool.*</value>
+            </list>
+        </property>
+    </bean>
 
-  		<property name="transactionAttributes">
-   			<props>
-   				 <prop key="upsert">PROPAGATION_REQUIRED</prop>
-   			</props>
-   		</property>
+    <bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="transactionInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">
+        <property name="transactionManager">
+            <ref local="txManager"/>
+        </property>
+
+        <property name="transactionAttributes">
+            <props>
+                <prop key="upsert">PROPAGATION_REQUIRED</prop>
+            </props>
+        </property>
    	</bean>
-   			
-	<tx:annotation-driven transaction-manager="txManager" />
-	
+    <tx:annotation-driven transaction-manager="txManager" />
 </beans>
