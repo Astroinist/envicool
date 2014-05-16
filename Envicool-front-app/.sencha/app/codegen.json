@@ -38,6 +38,9 @@
     },
     "{profileFileName}.js.tpl.merge": {
       "99a94fcf631093dae0e3543382df4b40aa060c43": "eJxdUDFuwzAM3POK25wAhrM7U4esRfeig2rRCQGFMiQ6TmD475Vko2jDQZCOPOruzg9tLPUstK9mMwzv5kZLMwTfs6Nmlvysasw7pKKHktgW1Tmx0nDzsc5VdWmX43hc18HIE8ZaVvZiHDpnYqSIpx8DNh6EyEZcKVDhdl56vrTbb7nuTFNs8flV/0I3b8m9YFF9oBcsLdPgnaNQGgVf/gnVK0dsVjGxc/hOsjvlu1Gy4B4TwZJSp+lWBUIYRVgu8AKDNZyyi+NbplGLfpQuO96neA5/jATSMQhycD42HLdoT6us3XI4/QB37nfu"
+    },
+    "{controllerFileName}.js.tpl.merge": {
+      "7cd8d1cf12515ca525732931d6b775e3f7924ad9": "eJx1j0EKwyAQRfeeYnYmIMk+XZXSbe8gOjaCGSWxbSB49xoTQij0L8ZR3p8/3ufYaDSWsOKL8hRH7xyODzngFKTC1Py8Ji5gYZCFc0TSHfB7niFDaG4HyEUhSsl2Y5/dblo1opnO9wNdlcTR7sH/UXYylNK2SuZ8DZ8eCWKPcA3BWSWj9QR2AidfpHrUIi8x+DeCNUA+AiFq1GXGhnRg8rHaqvy1+rTCFspSfWFfyCxXmA\u003d\u003d"
     }
   },
   "targets": {
@@ -299,6 +302,17 @@
         "profileFileName": "Tablet",
         "name": "Tablet",
         "profileName": "Tablet"
+      }
+    },
+    "app/controller/Main.js": {
+      "source": "{controllerFileName}.js.tpl.merge",
+      "version": "7cd8d1cf12515ca525732931d6b775e3f7924ad9",
+      "parameters": {
+        "appName": "Envicool",
+        "controllerName": "Main",
+        "controllerFileName": "Main",
+        "name": "Main",
+        "controllerNamespace": "Envicool.controller"
       }
     }
   }

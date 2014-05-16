@@ -20,6 +20,9 @@ Ext.application({
     views: [
         'Main'
     ],
+    controllers:[
+        'Main'
+    ],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -41,11 +44,7 @@ Ext.application({
     },
 
     launch: function() {
-        // Destroy the #appLoadingIndicator element
-        Ext.fly('appLoadingIndicator').destroy();
 
-        // Initialize the main view
-        Ext.Viewport.add(Ext.create('Envicool.view.Main'));
     },
 
     onUpdated: function() {

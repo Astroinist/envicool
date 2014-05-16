@@ -1,0 +1,103 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "phone.Main",
+        "models": [
+            "ProdInfo"
+        ],
+        "stores": [
+            "ProdInfoStore"
+        ]
+    },
+    "designerId": "e308eb11-4eb1-4dd9-8e41-57ad2730a5da",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "inforPage",
+                "selector": "carousel#mycarousel1"
+            },
+            "designerId": "be53f2dd-eaea-41d8-adf1-7903670e9aab"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "a00f49c6-6538-4e9f-b930-739af6230131"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "carousel#mycarousel1",
+                "designer|targetType": "Ext.carousel.Carousel",
+                "fn": "onCarouselInitialize",
+                "implHandler": [
+                    "        var items = [],\r",
+                    "            newActiveItem = component;\r",
+                    "        for(var i=1;i<=10;i++){\r",
+                    "            items.push({\r",
+                    "                xtype:'container',\r",
+                    "                layout:{\r",
+                    "                    type:'vbox',\r",
+                    "                    pack:'justify'\r",
+                    "                },\r",
+                    "                items:[{\r",
+                    "                    flex:1,\r",
+                    "                    xtype: 'image',\r",
+                    "                    cls: 'my-carousel-item-img',\r",
+                    "                    src: 'resources/images/photos/Cars/' + i + '.jpg'\r",
+                    "                },\r",
+                    "                {\r",
+                    "                    flex:1,\r",
+                    "                    xtype: 'container',\r",
+                    "                    styleHtmlContent:true,\r",
+                    "                    html:'搞一堆文字'\r",
+                    "                }\r",
+                    "                ]\r",
+                    "            });\r",
+                    "        }\r",
+                    "        newActiveItem.add(items);"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "2281bb74-71eb-4ab9-8bf5-b3a69298c0d7"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "phoneMain",
+                "selector": "tabpanel#mytabpanel"
+            },
+            "designerId": "6d0d7efc-efed-4e29-b425-1fd9550149a8"
+        }
+    ]
+}

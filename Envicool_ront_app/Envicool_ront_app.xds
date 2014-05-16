@@ -1,0 +1,61 @@
+{
+    "name": "Envicool_ront_app",
+    "settings": {
+        "cmd": {
+            "license": "custom",
+            "cmdVersion": "4.0.4.84",
+            "frameworkOverride": "F:/sdk/touch-2.3.2"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone 5",
+                "builtIn": true,
+                "height": 568,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "http://localhost:1841/",
+        "exportPath": "C:/Users/Aster/Desktop/buildApps",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "displayfield-ExtBox1-1509-inputEl": "Not Installed",
+        "lastBuildSelection": {
+            "value": "androidBuild",
+            "display": "Build Android app"
+        }
+    },
+    "xdsVersion": "3.0.4",
+    "xdsBuild": 1386,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "92d7cf59-43f0-4e22-bb1b-d3ed5006ab76",
+            "68fa168c-5103-4aa1-abb2-8ea1d6dfdb0b"
+        ],
+        "store": [
+            "8c4e45d8-03d9-4f98-9ac3-55a0a5b5f74c"
+        ],
+        "controller": [
+            "e308eb11-4eb1-4dd9-8e41-57ad2730a5da"
+        ],
+        "model": [
+            "16ebc8fd-8f3e-468d-a4aa-ccb850a6c763"
+        ],
+        "resource": [
+            "b31f0d1a-5cab-4ac5-9236-a0a90946edd4",
+            "5c29858c-b08f-4aad-895c-4e753ac6ce0d",
+            "2797329c-14c1-4bd6-af0c-d755ef701f9a"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

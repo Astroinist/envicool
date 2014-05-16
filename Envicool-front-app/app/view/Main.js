@@ -12,21 +12,22 @@ Ext.define('Envicool.view.Main', {
             {
                 title: 'Welcome',
                 iconCls: 'home',
+                scrollable: false,
+                layout:'fit',
+                items:[ 
+                    {
+                        docked: 'top',
+                        xtype: 'titlebar',
+                        title: 'Welcome'
+                    },
+                    {
+                        xtype: 'carousel',
+                        bufferSize: 2,
 
-                styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
-                },
-
-                html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
-                ].join("")
+                        //this time direction vertical
+                        direction: 'vertical'
+                    }
+                ]
             },
             { iconCls: 'favorites', title: 'Favorites' },
             {

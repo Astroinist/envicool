@@ -1,0 +1,58 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "phone.Main"
+        ],
+        "isIconPrecomposed": true,
+        "name": "Envicool",
+        "profiles": null,
+        "requires": [
+            "Ext.MessageBox"
+        ],
+        "views": [
+            "MyPanel1"
+        ]
+    },
+    "configAlternates": {
+        "profiles": "array"
+    },
+    "designerId": "application",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "profiles",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onUpdated",
+                "implHandler": [
+                    "        Ext.Msg.confirm(\r",
+                    "            \"Application Update\",\r",
+                    "            \"This application has just successfully been updated to the latest version. Reload now?\",\r",
+                    "            function(buttonId) {\r",
+                    "                if (buttonId === 'yes') {\r",
+                    "                    window.location.reload();\r",
+                    "                }\r",
+                    "            }\r",
+                    "        );"
+                ]
+            },
+            "designerId": "5def5eab-7a14-4e64-884c-f4a03b0677dd"
+        }
+    ]
+}

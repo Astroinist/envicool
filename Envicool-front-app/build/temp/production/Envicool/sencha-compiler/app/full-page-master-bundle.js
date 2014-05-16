@@ -1,2 +1,2 @@
 // @tag full-page
-// @require D:\xampp\tomcat\webapps\Envicool\app.js
+// @require C:\Users\Aster\Documents\GitHub\envicool\Envicool-front-app\app.js

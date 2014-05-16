@@ -1,0 +1,73 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "MainView",
+        "designer|userClassName": "phone.Main"
+    },
+    "configAlternates": {
+        "configs": "object"
+    },
+    "designerId": "92d7cf59-43f0-4e22-bb1b-d3ed5006ab76",
+    "cn": [
+        {
+            "type": "Ext.carousel.Carousel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "direction": "vertical",
+                "docked": null,
+                "iconCls": "info",
+                "itemId": "mycarousel1"
+            },
+            "designerId": "feccb8ed-fa86-445c-a352-efd0f6e01965"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "15faa2b8-7909-441b-a0bb-06a74e992c5a"
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "我勒个去",
+                "iconCls": "favorites"
+            },
+            "designerId": "22e8f1d5-bf2a-4f29-b417-9bb1435137e7"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "HomePage",
+                "iconCls": "home"
+            },
+            "designerId": "f539c780-a0f9-4188-a63c-b0eff9db80a6",
+            "masterInstanceId": "68fa168c-5103-4aa1-abb2-8ea1d6dfdb0b"
+        }
+    ]
+}

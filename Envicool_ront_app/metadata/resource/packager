@@ -1,0 +1,41 @@
+{
+    "type": "packagesetting",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "androidAPILevel": "17",
+        "applicationId": "com.mycompany.myAppID",
+        "applicationName": "Envicool_ront_app",
+        "certificateAlias": "EmptyValue",
+        "certificatePassword": "",
+        "certificatePath": "",
+        "configuration": "Debug",
+        "designer|userClassName": "packager",
+        "deviceType": "Universal",
+        "icon": [
+            "{\"36\":\"resources/icons/Icon_Android36.png\",\"48\":\"resources/icons/Icon_Android48.png\",\"72\":\"resources/icons/Icon~ipad.png\"}"
+        ],
+        "inputPath": "./",
+        "orientations": [
+            "portrait"
+        ],
+        "outputPath": "../build/",
+        "permissions": [
+            "INTERNET",
+            "ACCESS_NETWORK_STATE",
+            "CAMERA",
+            "VIBRATE",
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_COARSE_LOCATION",
+            "CALL_PHONE"
+        ],
+        "platform": "Android",
+        "sdkPath": "F:/sdk/adt-bundle-windows-x86_64-20130514/sdk",
+        "versionCode": "1",
+        "versionString": "1.0"
+    },
+    "designerId": "2797329c-14c1-4bd6-af0c-d755ef701f9a"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "libraryresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Library",
+        "theme": "MyCupertinoTheme"
+    },
+    "designerId": "b31f0d1a-5cab-4ac5-9236-a0a90946edd4"
+}

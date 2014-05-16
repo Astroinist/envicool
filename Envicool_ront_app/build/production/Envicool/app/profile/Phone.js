@@ -1,0 +1,1 @@
+function _479ef98020a4559b17374b3ed07c528ac308467b(){};Ext.define("Envicool.profile.Phone",{extend:"Ext.app.Profile",config:{views:["Main"],models:[],stores:[],controllers:["Main"]},isActive:function(a){return !Ext.os.is.Tablet&&!Ext.os.is.Desktop},launch:function(){Ext.create("Envicool.view.phone.Main",{fullscreen:true})}});

@@ -20,6 +20,9 @@ Ext.Loader.addClassPathMappings({
   "Ext.draw.engine.SvgContext.Gradient": "touch/src/draw/engine/SvgContext.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
+  "Envicool.controller.Main": [],
+  "Envicool.profile.Phone": [],
+  "Envicool.profile.Tablet": [],
   "Envicool.view.Main": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
@@ -746,6 +749,9 @@ Ext.ClassManager.addNameAlternateMappings({
   ]
 });
 Ext.ClassManager.addNameAliasMappings({
+  "Envicool.controller.Main": [],
+  "Envicool.profile.Phone": [],
+  "Envicool.profile.Tablet": [],
   "Envicool.view.Main": [
     "widget.main"
   ],
