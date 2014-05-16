@@ -51,7 +51,7 @@
             "codeClass": null,
             "userConfig": {
                 "html": "我勒个去",
-                "iconCls": "favorites"
+                "iconCls": "compose"
             },
             "designerId": "22e8f1d5-bf2a-4f29-b417-9bb1435137e7"
         },
@@ -64,9 +64,23 @@
             "codeClass": null,
             "userConfig": {
                 "html": "HomePage",
-                "iconCls": "home"
+                "iconCls": "user"
             },
             "designerId": "f539c780-a0f9-4188-a63c-b0eff9db80a6",
+            "masterInstanceId": "68fa168c-5103-4aa1-abb2-8ea1d6dfdb0b"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "HomePage",
+                "iconCls": "more"
+            },
+            "designerId": "d60e8a8d-0794-4848-8a00-c5667dc538ec",
             "masterInstanceId": "68fa168c-5103-4aa1-abb2-8ea1d6dfdb0b"
         }
     ]

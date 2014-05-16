@@ -34,13 +34,18 @@ Ext.define('Envicool.view.phone.Main', {
             },
             {
                 xtype: 'panel',
-                iconCls: 'favorites',
+                iconCls: 'compose',
                 html: '我勒个去'
             },
             {
                 xtype: 'mypanel1',
                 html: 'HomePage',
-                iconCls: 'home'
+                iconCls: 'user'
+            },
+            {
+                xtype: 'mypanel1',
+                html: 'HomePage',
+                iconCls: 'more'
             }
         ],
         tabBar: {

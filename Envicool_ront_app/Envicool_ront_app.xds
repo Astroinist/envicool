@@ -26,8 +26,8 @@
         "generateArchitectVersion": true,
         "displayfield-ExtBox1-1509-inputEl": "Not Installed",
         "lastBuildSelection": {
-            "value": "androidBuild",
-            "display": "Build Android app"
+            "value": "webBuild",
+            "display": "Build web app"
         }
     },
     "xdsVersion": "3.0.4",
