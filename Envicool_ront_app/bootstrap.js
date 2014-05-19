@@ -21,12 +21,11 @@ Ext.Loader.addClassPathMappings({
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Envicool.controller.phone.Main": [],
-  "Envicool.profile.Phone": [],
-  "Envicool.profile.Tablet": [],
+  "Envicool.model.ProdInfo": [],
+  "Envicool.store.ProdInfoStore": [],
   "Envicool.view.Main": [],
   "Envicool.view.MyPanel1": [],
   "Envicool.view.phone.Main": [],
-  "Envicool.view.tablet.Main": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],
@@ -753,8 +752,8 @@ Ext.ClassManager.addNameAlternateMappings({
 });
 Ext.ClassManager.addNameAliasMappings({
   "Envicool.controller.phone.Main": [],
-  "Envicool.profile.Phone": [],
-  "Envicool.profile.Tablet": [],
+  "Envicool.model.ProdInfo": [],
+  "Envicool.store.ProdInfoStore": [],
   "Envicool.view.Main": [
     "widget.main"
   ],
@@ -762,9 +761,6 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.mypanel1"
   ],
   "Envicool.view.phone.Main": [
-    "widget.MainView"
-  ],
-  "Envicool.view.tablet.Main": [
     "widget.MainView"
   ],
   "Ext.AbstractComponent": [],

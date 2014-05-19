@@ -16,7 +16,7 @@
             "viewportOrientation": "portrait"
         },
         "urlPrefix": "http://localhost:1841/",
-        "exportPath": "C:/Users/Aster/Desktop/buildApps",
+        "exportPath": "C:/Users/Aster/Desktop/buildApps/",
         "spacesToIndent": 4,
         "sdkPath": "",
         "lineEnding": "CRLF",

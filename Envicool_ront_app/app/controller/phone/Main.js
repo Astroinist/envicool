@@ -37,31 +37,52 @@ Ext.define('Envicool.controller.phone.Main', {
     },
 
     onCarouselInitialize: function(component, eOpts) {
-                var items = [],
-                    newActiveItem = component;
-                for(var i=1;i<=10;i++){
-                    items.push({
-                        xtype:'container',
-                        layout:{
-                            type:'vbox',
-                            pack:'justify'
-                        },
-                        items:[{
-                            flex:1,
-                            xtype: 'image',
-                            cls: 'my-carousel-item-img',
-                            src: 'resources/images/photos/Cars/' + i + '.jpg'
-                        },
-                        {
-                            flex:1,
-                            xtype: 'container',
-                            styleHtmlContent:true,
-                            html:'搞一堆文字'
-                        }
-                        ]
+
+                var categories = ['Food', 'Animals', 'Cars', 'Architecture'],
+                    itemsCountPerCategory = 10,
+                    horizontalCarousels = [],
+                    items, i, j, ln, category;
+
+                //now we loop through each of the categories
+                for (i = 0,ln = categories.length; i < ln; i++) {
+                    items = [];
+                    category = categories[i];
+                    for(j=1;j <= itemsCountPerCategory;j++){
+                        items.push({
+                            xtype:'container',
+                            layout:{
+                                type:'vbox',
+                                pack:'justify'
+                            },
+                            items:[{
+                                flex:1,
+                                xtype: 'image',
+                                cls: 'my-carousel-item-img',
+                                src: 'resources/images/photos/'+ category + '/'  + j + '.jpg'
+                            },
+                            {
+                                flex:1,
+                                xtype: 'container',
+                                styleHtmlContent:true,
+                                html:'搞一堆文字'
+                            }
+                            ]
+                        });
+                    }
+                    horizontalCarousels.push({
+                        xtype: 'carousel',
+
+                        //the direction is horizontal
+                        direction: 'horizontal',
+
+                        //we turn on direction lock so you cannot scroll diagonally
+                        directionLock: true,
+
+                        //and give it the items array
+                        items: items
                     });
                 }
-                newActiveItem.add(items);
+                component.add(horizontalCarousels);
     },
 
     launch: function() {
