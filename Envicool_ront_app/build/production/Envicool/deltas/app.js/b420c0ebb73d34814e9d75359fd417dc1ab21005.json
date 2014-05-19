@@ -1,1 +1,0 @@
-["function _774f226f1ee03538e675d9cfc2740ab94b0e5a0d",50,472982,"imag",473029,266,",direction:\"vertical",473294,976,"isIconPrecomposed:true,name:\"Envicool\",onUpdated:function(){Ext.Msg.confirm(\"Application Update\",\"This application has just successfully been updated to the latest version. Reload now?\",function(a){if(a===\"yes\"){window.location.reload()}})",473516,80]

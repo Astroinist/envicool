@@ -1,1 +1,0 @@
-function _cac45ea1f00eafd7f2774df3669d2036b47605b0(){};Ext.define("Envicool.profile.Tablet",{extend:"Ext.app.Profile",config:{views:["Main"],models:[],stores:[],controllers:[]},isActive:function(a){return Ext.os.is.Tablet||Ext.os.is.Desktop},launch:function(){Ext.create("Envicool.view.tablet.Main",{fullscreen:true})}});
